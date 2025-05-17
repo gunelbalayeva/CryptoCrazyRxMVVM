@@ -10,9 +10,19 @@
 		CE09D0D82DD8B5C000F22276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0D72DD8B5C000F22276 /* AppDelegate.swift */; };
 		CE09D0DA2DD8B5C000F22276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0D92DD8B5C000F22276 /* SceneDelegate.swift */; };
 		CE09D0DC2DD8B5C000F22276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0DB2DD8B5C000F22276 /* ViewController.swift */; };
-		CE09D0DF2DD8B5C000F22276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09D0DD2DD8B5C000F22276 /* Main.storyboard */; };
 		CE09D0E12DD8B5C400F22276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09D0E02DD8B5C400F22276 /* Assets.xcassets */; };
 		CE09D0E42DD8B5C400F22276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09D0E22DD8B5C400F22276 /* LaunchScreen.storyboard */; };
+		CE09D0ED2DD8B70900F22276 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0EC2DD8B70900F22276 /* MyCell.swift */; };
+		CE09D0F02DD8B72C00F22276 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D0EF2DD8B72C00F22276 /* SnapKit */; };
+		CE09D0F22DD8B72C00F22276 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D0F12DD8B72C00F22276 /* SnapKit-Dynamic */; };
+		CE09D0F92DD8BBB300F22276 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0F82DD8BBB300F22276 /* Crypto.swift */; };
+		CE09D0FB2DD8C15100F22276 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0FA2DD8C15100F22276 /* NetworkService.swift */; };
+		CE09D0FD2DD8CA4300F22276 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09D0FC2DD8CA4300F22276 /* CryptoViewModel.swift */; };
+		CE09D1002DD8D0CD00F22276 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D0FF2DD8D0CD00F22276 /* RxBlocking */; };
+		CE09D1022DD8D0CD00F22276 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D1012DD8D0CD00F22276 /* RxBlocking-Dynamic */; };
+		CE09D1042DD8D0CD00F22276 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D1032DD8D0CD00F22276 /* RxCocoa */; };
+		CE09D1062DD8D0CD00F22276 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D1052DD8D0CD00F22276 /* RxCocoa-Dynamic */; };
+		CE09D1082DD8D0CD00F22276 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CE09D1072DD8D0CD00F22276 /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +30,13 @@
 		CE09D0D72DD8B5C000F22276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE09D0D92DD8B5C000F22276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE09D0DB2DD8B5C000F22276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE09D0DE2DD8B5C000F22276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE09D0E02DD8B5C400F22276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE09D0E32DD8B5C400F22276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE09D0E52DD8B5C400F22276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE09D0EC2DD8B70900F22276 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		CE09D0F82DD8BBB300F22276 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		CE09D0FA2DD8C15100F22276 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE09D0FC2DD8CA4300F22276 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE09D0F02DD8B72C00F22276 /* SnapKit in Frameworks */,
+				CE09D1002DD8D0CD00F22276 /* RxBlocking in Frameworks */,
+				CE09D1082DD8D0CD00F22276 /* RxRelay in Frameworks */,
+				CE09D1042DD8D0CD00F22276 /* RxCocoa in Frameworks */,
+				CE09D0F22DD8B72C00F22276 /* SnapKit-Dynamic in Frameworks */,
+				CE09D1062DD8D0CD00F22276 /* RxCocoa-Dynamic in Frameworks */,
+				CE09D1022DD8D0CD00F22276 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,66 @@
 		CE09D0D62DD8B5C000F22276 /* CryptoCrazyRxMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				CE09D0D72DD8B5C000F22276 /* AppDelegate.swift */,
-				CE09D0D92DD8B5C000F22276 /* SceneDelegate.swift */,
-				CE09D0DB2DD8B5C000F22276 /* ViewController.swift */,
-				CE09D0DD2DD8B5C000F22276 /* Main.storyboard */,
+				CE09D0F72DD8BA1100F22276 /* Service */,
+				CE09D0F62DD8B9F700F22276 /* ViewModel */,
+				CE09D0F52DD8B9F000F22276 /* Model */,
+				CE09D0F42DD8B9D900F22276 /* App */,
+				CE09D0F32DD8B77400F22276 /* Views */,
+				CE09D0EB2DD8B6F700F22276 /* Cells */,
 				CE09D0E02DD8B5C400F22276 /* Assets.xcassets */,
 				CE09D0E22DD8B5C400F22276 /* LaunchScreen.storyboard */,
 				CE09D0E52DD8B5C400F22276 /* Info.plist */,
 			);
 			path = CryptoCrazyRxMVVM;
+			sourceTree = "<group>";
+		};
+		CE09D0EB2DD8B6F700F22276 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D0EC2DD8B70900F22276 /* MyCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE09D0F32DD8B77400F22276 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D0DB2DD8B5C000F22276 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE09D0F42DD8B9D900F22276 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D0D72DD8B5C000F22276 /* AppDelegate.swift */,
+				CE09D0D92DD8B5C000F22276 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE09D0F52DD8B9F000F22276 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D0F82DD8BBB300F22276 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE09D0F62DD8B9F700F22276 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D0FC2DD8CA4300F22276 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE09D0F72DD8BA1100F22276 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE09D0FA2DD8C15100F22276 /* NetworkService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,15 @@
 			dependencies = (
 			);
 			name = CryptoCrazyRxMVVM;
+			packageProductDependencies = (
+				CE09D0EF2DD8B72C00F22276 /* SnapKit */,
+				CE09D0F12DD8B72C00F22276 /* SnapKit-Dynamic */,
+				CE09D0FF2DD8D0CD00F22276 /* RxBlocking */,
+				CE09D1012DD8D0CD00F22276 /* RxBlocking-Dynamic */,
+				CE09D1032DD8D0CD00F22276 /* RxCocoa */,
+				CE09D1052DD8D0CD00F22276 /* RxCocoa-Dynamic */,
+				CE09D1072DD8D0CD00F22276 /* RxRelay */,
+			);
 			productName = CryptoCrazyRxMVVM;
 			productReference = CE09D0D42DD8B5C000F22276 /* CryptoCrazyRxMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +191,10 @@
 				Base,
 			);
 			mainGroup = CE09D0CB2DD8B5C000F22276;
+			packageReferences = (
+				CE09D0EE2DD8B72C00F22276 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = CE09D0D52DD8B5C000F22276 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +211,6 @@
 			files = (
 				CE09D0E42DD8B5C400F22276 /* LaunchScreen.storyboard in Resources */,
 				CE09D0E12DD8B5C400F22276 /* Assets.xcassets in Resources */,
-				CE09D0DF2DD8B5C000F22276 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE09D0DC2DD8B5C000F22276 /* ViewController.swift in Sources */,
+				CE09D0ED2DD8B70900F22276 /* MyCell.swift in Sources */,
+				CE09D0F92DD8BBB300F22276 /* Crypto.swift in Sources */,
+				CE09D0FD2DD8CA4300F22276 /* CryptoViewModel.swift in Sources */,
 				CE09D0D82DD8B5C000F22276 /* AppDelegate.swift in Sources */,
+				CE09D0FB2DD8C15100F22276 /* NetworkService.swift in Sources */,
 				CE09D0DA2DD8B5C000F22276 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +234,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE09D0DD2DD8B5C000F22276 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE09D0DE2DD8B5C000F22276 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE09D0E22DD8B5C400F22276 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +375,6 @@
 				INFOPLIST_FILE = CryptoCrazyRxMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +401,6 @@
 				INFOPLIST_FILE = CryptoCrazyRxMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +438,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE09D0EE2DD8B72C00F22276 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE09D0EF2DD8B72C00F22276 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0EE2DD8B72C00F22276 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CE09D0F12DD8B72C00F22276 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0EE2DD8B72C00F22276 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		CE09D0FF2DD8D0CD00F22276 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		CE09D1012DD8D0CD00F22276 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		CE09D1032DD8D0CD00F22276 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CE09D1052DD8D0CD00F22276 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		CE09D1072DD8D0CD00F22276 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE09D0FE2DD8D0CD00F22276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE09D0CC2DD8B5C000F22276 /* Project object */;
 }
